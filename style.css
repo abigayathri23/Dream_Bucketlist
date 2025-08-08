@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  background: linear-gradient(270deg, #d85ea7, #5a56c6, #1bb08b, #b32dc5);
+  background-size: 800% 800%;
+  animation: gradientMove 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+.bucket-container {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.input-group {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.input-group button {
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  border: none;
+  padding: 0 1rem;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.input-group button:hover {
+  background: linear-gradient(to right, #38ef7d, #11998e);
+}
+ul {
+  list-style: none;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.btns i {
+  margin-left: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btns i:hover {
+  transform: scale(1.2);
+}
+.stats {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.stats p {
+  margin-bottom: 0.4rem;
+}
+.progress-bar {
+  background: rgba(255, 255, 255, 0.3);
+  height: 12px;
+  border-radius: 6px;
+  margin-top: 0.6rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .bucket-container {
+    padding: 1rem;
+  }
+}

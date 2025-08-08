@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dream Bucket List</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1><i class="fa-solid fa-star"></i> Dream Bucket List</h1>
+  <div class="bucket-container">
+    <div class="input-group">
+      <input type="text" id="item-input" placeholder="Add a new goal..." />
+      <button onclick="addItem()">Add</button>
+    </div>
+    <ul id="bucket-list"></ul>
+    <div class="stats">
+      <p>Total Goals: <span id="total">0</span></p>
+      <p>Completed: <span id="completed">0</span></p>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
